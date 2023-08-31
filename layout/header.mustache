@@ -7,59 +7,8 @@
     <title>Your Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        /* Global Styles */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation Styles */
-        .navbar {
-            background-color: transparent;
-        }
-
-        .navbar-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav-link {
-            font-size: 25px;
-            font-style: bold;
-            color: #000000;
-            text-decoration: none;
-
-        }
-
-
-
-
-        .nav-item2 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Divider Styles */
-        hr {
-            border-color: #000000;
-            margin: 0;
-        }
-
-        /* Join and Login Button Styles */
-        .join_and_login {
-            margin-top: 10px;
-        }
-        .navbar{
-            margin-inline: 20%;
-        }
-         .bg{
-    background-color: whitesmoke;
-  }
-  
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
+ 
 </head>
 
 
@@ -75,14 +24,14 @@
                             <img src="/images/logo.png" style="max-width: 100px;">
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">채용공고</a>
+                    <li class="nav-item2">
+                        <a class="nav-link2" href="#">채용공고</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">이벤트</a>
+                    <li class="nav-item2">
+                        <a class="nav-link2" href="#">이벤트</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">고객센터</a>
+                    <li class="nav-item2">
+                        <a class="nav-link2" href="#">고객센터</a>
                     </li>
                 </ul>
             </div>
@@ -99,7 +48,10 @@
                     </button>
                     <button type="button" class="btn btn-secondary">
                         로그인
-                    </button>ㄴ
+                    </button>
+                    <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#myModal">
+                        나의정보
+                    </button>
                 </div>
             </div>
         </div>
@@ -111,7 +63,23 @@
 
     
 
+    <script>
+        // Simulate session user logged in
+        var sessionUserLoggedIn = true; // Set this to true if the user is logged in
 
+        // Get reference to the mypage button
+        var mypageBtn = document.getElementById('mypageBtn');
+
+        // Check if the user is logged in
+        if (sessionUserLoggedIn) {
+            // Show the mypage button
+            mypageBtn.style.display = 'block';
+        } else {
+            // Hide the mypage button
+            mypageBtn.style.display = 'none';
+        }
+    </script>
 </body>
+
 
 </html>
