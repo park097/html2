@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
     <div class="frame">
         <div class="container mt-3">
             <div class="row">
@@ -18,10 +6,11 @@
                     <a class="nav-link title text-center fs-2" href="userInformation.html">회원정보보기</a>
                     <div class="card">
                         <div class="user_image">
-                            <img class="user_image_box" src="../images/basic.png" alt="">
+                            <img class="user_image_box" src="../images/basic.png" alt="기본이미지">
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-warning text-center pic_update_button">사진수정</button>
+                            <button type="button" class="btn btn-warning text-center"
+                                style="width: 100px;">사진수정</button>
                         </div>
                         <hr />
                         <div>
@@ -35,8 +24,8 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="d-flex pe-3 my-3">
-                        <div class="small_title">관심 기업</div>
+                    <div class="d-flex justify-content-between pe-3 my-3">
+                        <div class="small_title">지원 현황</div>
                     </div>
                     <hr />
                     <div class="list-group">
@@ -51,8 +40,13 @@
                                             회사명
                                         </h6>
                                     </div>
-                                    <div class="mb-1 d-flex align-items-center">
-                                        <button type="button" class="btn btn-info apply_button">지원하기</button>
+                                    <div>
+                                        <div class="mb-1">
+                                            <button type="button" class="btn btn-success">합격</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-danger btn">취소</button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -68,8 +62,13 @@
                                             회사명
                                         </h6>
                                     </div>
-                                    <div class="mb-1 d-flex align-items-center">
-                                        <button type="button" class="btn btn-info apply_button">지원하기</button>
+                                    <div>
+                                        <div class="mb-1">
+                                            <button type="button" class="btn btn-warning">불합격</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-danger btn">취소</button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -85,8 +84,13 @@
                                             회사명
                                         </h6>
                                     </div>
-                                    <div class="mb-1 d-flex align-items-center">
-                                        <button type="button" class="btn btn-info apply_button">지원하기</button>
+                                    <div>
+                                        <div class="mb-1">
+                                            <button type="button" class="btn btn-primary">대기중</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-danger btn">취소</button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -102,8 +106,13 @@
                                             회사명
                                         </h6>
                                     </div>
-                                    <div class="mb-1 d-flex align-items-center">
-                                        <button type="button" class="btn btn-info apply_button">지원하기</button>
+                                    <div>
+                                        <div class="mb-1">
+                                            <button type="button" class="btn btn-primary">대기중</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-danger btn">취소</button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -116,28 +125,28 @@
             <div class="d-flex justify-content-around">
                 <a class="card recommand_recruit" href="recruitDetail.html">
                     <div class="card-body home d-flex justify-content-center">
-                        <img class="recruit_image" src="../images/company.jpg" alt="공고 사진">
+                        <img class="recruit_image_box" src="../images/company.jpg" alt="공고 사진">
                     </div>
                     <h4 class="text-center">공고 제목</h4>
                     <div class="text-center">회사명</div>
                 </a>
                 <a class="card recommand_recruit" href="recruitDetail.html">
                     <div class="card-body home d-flex justify-content-center">
-                        <img class="recruit_image" src="../images/company.jpg" alt="공고 사진">
+                        <img class="recruit_image_box" src="../images/company.jpg" alt="공고 사진">
                     </div>
                     <h4 class="text-center">공고 제목</h4>
                     <div class="text-center">회사명</div>
                 </a>
                 <a class="card recommand_recruit" href="recruitDetail.html">
                     <div class="card-body home d-flex justify-content-center">
-                        <img class="recruit_image" src="../images/company.jpg" alt="공고 사진">
+                        <img class="recruit_image_box" src="../images/company.jpg" alt="공고 사진">
                     </div>
                     <h4 class="text-center">공고 제목</h4>
                     <div class="text-center">회사명</div>
                 </a>
                 <a class="card recommand_recruit" href="recruitDetail.html">
                     <div class="card-body home d-flex justify-content-center">
-                        <img class="recruit_image" src="../images/company.jpg" alt="공고 사진">
+                        <img class="recruit_image_box" src="../images/company.jpg" alt="공고 사진">
                     </div>
                     <h4 class="text-center">공고 제목</h4>
                     <div class="text-center">회사명</div>
@@ -145,6 +154,3 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
